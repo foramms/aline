@@ -1,5 +1,7 @@
 # Aline - Your thoughts, guided by empathy
 
+LINK TO VIDEO PRESENTATION: https://drive.google.com/file/d/1x1cncBFXsj3DK8MulUKLO4uCFGTq6ms3/view?usp=sharing (Video is unlisted on both websites in case one link does not work)
+
 Welcome to Aline: A modern approach to journaling that helps you build meaningful reflection habits through smart insights, mood tracking, and personalized prompts. With the goal to make every user be able to practice self reflection daily even if it is just **A Line** at a time.
 
 ## 🌟 Why Aline?
