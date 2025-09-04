@@ -1,6 +1,6 @@
 # Aline - Your thoughts, guided by empathy
 
-Welcome to Aline: A modern approach to journaling that helps you build meaningful reflection habits through smart insights, mood tracking, and personalized prompts. With the goal to make every user be able to practice self reflection daily even if it is just *A Line* at a time.
+Welcome to Aline: A modern approach to journaling that helps you build meaningful reflection habits through smart insights, mood tracking, and personalized prompts. With the goal to make every user be able to practice self reflection daily even if it is just **A Line** at a time.
 
 ## 🌟 Why Aline?
 As a student, developer and professional who knows firsthand how busy life can get and started too many journals and planners, but never able to actually finish it. I know I would benefit from an application like Align which is quick and easy to use on a consistent basis.
