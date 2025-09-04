@@ -93,6 +93,9 @@ Journaling should feel safe, encouraging, and growth-focused
 - **Support**: We work to reduce the need for support
 
 
+<img width="1464" height="601" alt="Screenshot 2025-09-04 at 3 47 21 PM" src="https://github.com/user-attachments/assets/68c76f76-ac76-41dd-a926-0f1ee2e12f22" />
+
+
 
 
 ---
