@@ -44,16 +44,16 @@ Journaling should feel safe, encouraging, and growth-focused
 ### Frontend
 - **React and TypeScript**: Modern, type-safe development
 - **Vite**: Fast builds and development
-- **Tailwind CSS**: Flexible styling with our custom design system
+- **Tailwind CSS**: Flexible styling with our custom design system (Tradeoff: Chose this for front end because easily scalable)
 - **Lucide Icons**: Beautiful, consistent iconography
 
 ### Backend
-- **Node.js + Express**: Fast, reliable server
+- **Node.js + Express**: Fast, reliable server (Chose to use this backend due to reliability for the server aspect)
 - **ESLint**: Code quality
-- **MongoDB + Mongoose**: Flexible data storage
+- **MongoDB + Mongoose**: Flexible data storage (Tradeoff: Chose to use auth instead of not implementing auth to promote futher privacy and security for the user with thier own account)
 - **JWT Authentication**: Secure user sessions
 - **bcrypt**: Safe password handling
-- **Cursor**: For quick development fixes and the ability to implement formatting on a consistent basis
+- **Cursor**: For quick development fixes and the ability to implement formatting on a consistent basis (Tradeoff: Chosen over other AI platforms such as ChatGPT and Claude/Gemini due to flexibility and help provided for configuration file and repository base set up, fixes smaller formatting bugs and is more reliable due to token scalability)
 
 
 ## 🚀 Future Recommendations
@@ -95,6 +95,10 @@ Journaling should feel safe, encouraging, and growth-focused
 - **Feedback**: We regularly ask for and act on user feedback
 - **Feature Value**: We track which features help users most
 - **Support**: We work to reduce the need for support
+
+- Commands:
+- npm install
+- npm run dev
 
 
 <img width="1464" height="601" alt="Screenshot 2025-09-04 at 3 47 21 PM" src="https://github.com/user-attachments/assets/68c76f76-ac76-41dd-a926-0f1ee2e12f22" />
