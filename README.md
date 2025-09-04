@@ -85,8 +85,6 @@ Journaling should feel safe, encouraging, and growth-focused
 ### User Engagement
 - **Daily Usage**: We aim for 70% of users to journal daily
 - **Session Time**: Aim for most users spend 10-15 minutes per session
-- **Retention**:
-- **Feature Use**:
 
 ### User Satisfaction
 - **Net Promoter Score**: We target an NPS of 50+
