@@ -110,7 +110,7 @@ export function JournalProvider({ children }: { children: React.ReactNode }) {
       date: new Date(),
     };
 
-    // Analyze entry for themes and sentiment
+    // Enhanced analysis with more detailed insights
     const analysis = analyzeEntry(newEntry.content);
     newEntry.themes = analysis.themes;
     newEntry.sentiment = analysis.sentiment;

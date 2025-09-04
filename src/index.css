@@ -47,6 +47,14 @@
   .textarea-field {
     @apply w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-all duration-200 bg-white resize-none journal-text;
   }
+
+  .gradient-text {
+    @apply bg-gradient-to-r from-primary-500 to-sage-400 bg-clip-text text-transparent;
+  }
+
+  .gradient-text-hover {
+    @apply bg-gradient-to-r from-primary-500 to-sage-400 bg-clip-text text-transparent hover:from-primary-600 hover:to-sage-500 transition-all duration-200;
+  }
 }
 
 .writing-animation {

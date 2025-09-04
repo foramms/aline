@@ -54,13 +54,13 @@ function JournalCountdown({ lastEntryTime }: { lastEntryTime: Date | null }) {
       <div className="bg-gradient-to-r from-primary-50 to-sage-50 rounded-xl p-6 border border-primary-200">
         <div className="flex items-center justify-center space-x-3 mb-3">
           <Sparkles className="w-5 h-5 text-primary-600" />
-          <h3 className="text-lg font-semibold bg-white text-transparent bg-clip-text bg-gradient-to-r from-primary-500 to-sage-400">
+          <h3 className="text-lg font-semibold gradient-text">
             Your thoughts, guided by empathy
           </h3>
           <Sparkles className="w-5 h-5 text-primary-600" />
         </div>
         <div className="text-center">
-          <div className="text-2xl font-bold bg-white text-transparent bg-clip-text bg-gradient-to-r from-primary-500 to-sage-400 py-2 rounded-md">
+          <div className="text-2xl font-bold gradient-text py-2 rounded-md">
             <Typewriter 
               textArray={[
                 "Interactive Dashboard",
@@ -88,7 +88,7 @@ function JournalCountdown({ lastEntryTime }: { lastEntryTime: Date | null }) {
     }`}>
       <div className="flex items-center justify-center space-x-3 mb-4">
         <Clock className={`w-5 h-5 ${isUrgent ? 'text-warm-600' : 'text-primary-600'}`} />
-        <h3 className={`text-lg font-semibold bg-white text-transparent bg-clip-text bg-gradient-to-r from-primary-500 to-sage-400 py-2 rounded-md" ${isUrgent ? 'text-warm-900' : 'text-gray-900'}`}>
+                 <h3 className={`text-lg font-semibold gradient-text py-2 rounded-md ${isUrgent ? 'text-warm-900' : 'text-gray-900'}`}>
           Next Journal Time
         </h3>
       </div>
@@ -195,13 +195,13 @@ export default function HomePage() {
           <>
             <button
               onClick={() => { setShowLogin(true); setIsRegistering(false); }}
-              className="font-semibold bg-white text-transparent bg-clip-text bg-gradient-to-r from-primary-500 to-sage-400 py-2 px-4 rounded-md hover:from-primary-600 hover:to-sage-500 transition-colors"
+              className="font-semibold gradient-text-hover py-2 px-4 rounded-md"
             >
               Login
             </button>
             <button
               onClick={() => { setShowLogin(true); setIsRegistering(true); }}
-              className="font-semibold bg-white text-transparent bg-clip-text bg-gradient-to-r from-primary-500 to-sage-400 py-2 px-4 rounded-md hover:from-primary-600 hover:to-sage-500 transition-colors"
+              className="font-semibold gradient-text-hover py-2 px-4 rounded-md"
             >
               Register
             </button>
@@ -223,7 +223,7 @@ export default function HomePage() {
 
       <div className="mx-auto max-w-7xl px-6 py-16 sm:py-24 lg:px-8 text-center">
         <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl mb-6">
-          <Typewriter textArray={["Welcome to Aline"]} speed={120} />
+          <Typewriter textArray={["Weelcome to Aline"]} speed={120} />
         </h1>
         <p className="mt-6 text-lg leading-8 text-gray-600 max-w-prose mx-auto mb-10">
           Transform your daily reflections into meaningful insights. Our empathetic AI helps you maintain a consistent journaling practice while preserving your complete privacy.
@@ -253,7 +253,7 @@ export default function HomePage() {
               />
               <button
                 type="submit"
-                className="w-full font-semibold bg-white text-transparent bg-clip-text bg-gradient-to-r from-primary-500 to-sage-400 py-2 rounded-md hover:from-primary-600 hover:to-sage-500 transition-colors"
+                className="w-full font-semibold gradient-text-hover py-2 rounded-md"
               >
                 {isRegistering ? "Register" : "Login"}
               </button>

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useJournal } from '../contexts/JournalContext';
 import { Lightbulb, Save, Smile, Meh, Frown, BookOpen } from 'lucide-react';
+import MusicWidget from '../components/MusicWidget';
 
 const moodEmojis = [
   { value: 1, emoji: '😢', label: '1', color: 'text-red-500' },
@@ -68,7 +69,7 @@ export default function JournalPage() {
       <div className="mx-auto max-w-4xl px-6 py-8 lg:px-8">
         {/* Header */}
         <div className="text-center mb-12">
-          <h1 className="text-3xl font-bold sm:text-4xl mb-4 bg-white text-transparent bg-clip-text bg-gradient-to-r from-primary-500 to-sage-400 py-2 rounded-md hover:from-primary-600 hover:to-sage-500 transition-colors">
+          <h1 className="text-3xl font-bold sm:text-4xl mb-4 gradient-text">
             Today's Journal
           </h1>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
@@ -76,9 +77,9 @@ export default function JournalPage() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-5 gap-8">
           {/* AI Prompt Card */}
-          <div className="lg:col-span-1">
+          <div className="lg:col-span-2">
             <div className="card p-6 sticky top-8">
               <div className="flex items-center mb-4">
                 <div className="w-8 h-8 bg-gradient-to-r from-primary-500 to-sage-500 rounded-full flex items-center justify-center mr-3">
@@ -91,7 +92,7 @@ export default function JournalPage() {
               </p>
               <button
                 onClick={handleNewPrompt}
-                className="text-sm w-full font-semibold bg-white text-transparent bg-clip-text bg-gradient-to-r from-primary-500 to-sage-400 py-2 rounded-md hover:from-primary-600 hover:to-sage-500 transition-colors"
+                className="text-sm w-full font-semibold gradient-text-hover"
               >
                 Get another prompt →
               </button>
@@ -114,11 +115,16 @@ export default function JournalPage() {
                   )}
                 </div>
               </div>
+
+              {/* Music Widget */}
+              <div className="mt-8">
+                <MusicWidget mood={mood} isVisible={true} />
+              </div>
             </div>
           </div>
 
           {/* Writing Area */}
-          <div className="lg:col-span-2">
+          <div className="lg:col-span-3">
             <div className="card p-8">
               {/* Mood Selector */}
               <div className="mb-8">
@@ -160,7 +166,7 @@ export default function JournalPage() {
               </div>
 
               {/* Action Buttons */}
-              <div className="flex justify-between items-center mt-8">
+              <div className="flex justify-between items-center mt-6">
                 <div className="text-sm text-gray-500">
                   {content.length > 0 ? (
                     <span className="text-primary-600 font-medium">Keep going! ✨</span>
@@ -171,8 +177,9 @@ export default function JournalPage() {
                 <button
                   onClick={handleSave}
                   disabled={!content.trim()}
+                  className="px-6 py-3 bg-gradient-to-r from-teal-500 to-green-500 text-white font-semibold rounded-lg hover:from-teal-600 hover:to-green-600 transition-all duration-200 transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
                 >
-                  <span className="text-teal-500  border border-green-600 px-4 py-2 rounded-md font-semibold hover:text-green-800 hover:border-green-800 transition-colors">Save Entry</span>
+                  Save Entry
                 </button>
               </div>
             </div>
